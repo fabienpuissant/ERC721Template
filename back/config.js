@@ -1,0 +1,7 @@
+module.exports.pinataApiKey = "fa60703f65369d11dbaf"
+module.exports.pinataSecret = "3124e97223252a571ce8bf75d601451cb7e2e293f53bfa0a08e7f29ab71db147"
+module.exports.contractAdress = "0x59b612C80327Ae8Fe1BB0FBcaC2cE3A20720C50e"
+module.exports.ownerAddress = "0x5fd399F8206B74753f82e70AD64E42FD26fe84C5"
+module.exports.ownerPrivateKey = "47cc07a17df4ff675bf071028c9b07b232beb9cd5ec24126cddef5f8fe41b563"
+module.exports.blockChainURL = "http://localhost:8545/"
+module.exports.pinataUrl = "https://gateway.pinata.cloud/ipfs/"
