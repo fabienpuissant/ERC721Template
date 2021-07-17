@@ -22,7 +22,7 @@ module.exports.mine = async(address, txHash) => {
         let web3 = web3Instance()
         let transaction = await web3.eth.getTransaction(txHash)
         if(transaction !== undefined){
-            if(transaction.from === address && transaction.to === ownerAddress){
+            if(Web3.utils.toChecksumAddress(transaction.from) === address && Web3.utils.toChecksumAddress(transaction.to) === ownerAddress){
                 const pinata = pinataSDK(pinataApiKey, pinataSecret);
                 const nftMined = createRandomNFT()
                 const result = await pinata.pinJSONToIPFS(nftMined).catch(error => {

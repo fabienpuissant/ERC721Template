@@ -29,8 +29,8 @@ function App() {
   const handleMine = async() => {
     const ammount = window.web3.utils.toWei(price, "ether")
     await window.web3.eth.sendTransaction({
-      to: contractOwnerAddress,
-      from: account,
+      to: Web3.utils.toChecksumAddress(contractOwnerAddress),
+      from: Web3.utils.toChecksumAddress(account),
       value: ammount
     }, async(error, result) => {
       if(!error){
